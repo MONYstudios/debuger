@@ -17,19 +17,19 @@ public class Debuger : MonoBehaviour
     {
         if (!getDebugmode())
         {
-            Debug.LogError("Debugmode isn't enabled!");
+            Debug.LogError("[ERROR] Debugmode isn't enabled!");
             return;
         }
-        Debug.Log("Debuger: " + input);
+        Debug.Log("[INFO] " + input);
     }
 
     public void ErrorMessage(string input)
     {
         if (!getDebugmode())
         {
-            Debug.LogError("Debugmode isn't enabled!");
+            Debug.LogError("[ERROR] Debugmode isn't enabled!");
             return;
         }
-        Debug.LogError("Debuger: " + input);
+        Debug.LogError("[ERROR] " + input);
     }
 }
